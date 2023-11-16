@@ -1,8 +1,8 @@
 import express from "express";
-import {createVideo} from "../controllers/video.js";
+import {upload} from "../controllers/upload.js";
 
 const router=express.Router();
 
-router.post("/", createVideo);
+router.post("/", upload);
 
 export default router;
